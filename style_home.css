@@ -1,0 +1,171 @@
+/* Header */
+
+* {
+    box-sizing: border-box;
+}
+    
+body
+{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tct-logo
+{
+    height: 40px;
+    cursor: pointer;
+}
+    
+.topnav
+{
+    overflow: hidden;
+    background-color: #00ff7f;
+}
+    
+.topnav a
+{
+    float: left;
+    display: block;
+    color: black;
+    font-weight:bolder;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+    
+.topnav a:hover
+{
+    background-color: #bfbfbf;
+    color: black;
+}
+    
+.topnav a.active
+{
+    background-color: #2196F3;
+    color: white;
+    font-weight: bolder;
+}
+    
+.topnav .search-container
+{
+    float: right;
+}
+    
+.topnav input[type=text]
+{
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+    
+.topnav .search-container button
+{
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+    
+.topnav .search-container button:hover
+{
+    background: #ccc;
+}
+    
+@media screen and (max-width: 600px)
+{
+    .topnav .search-container
+    {
+        float: none;
+    }
+        
+    .topnav a, .topnav input[type=text], .topnav .search-container button
+    {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+        
+    .topnav input[type=text]
+    {
+        border: 1px solid #ccc;
+    }
+}
+
+.navbar
+{
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.navbar a
+{
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.dropdown
+{
+    float: left;
+    overflow: hidden;
+}
+  
+.dropdown .dropbtn
+{
+    font-size: 17px;  
+    border: none;
+    outline: none;
+    color: black;
+    font-weight:bolder;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+.navbar a:hover, .dropdown:hover .dropbtn
+{
+    background-color: #bfbfbf;
+}
+  
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a
+{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover
+{
+    background-color: #bfbfbf;
+}
+  
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
