@@ -1,186 +1,222 @@
-*
+/* Header */
+
+* {
+    box-sizing: border-box;
+}
+    
+body
 {
     margin: 0;
-    padding: 50;
+    background-color: #0071c5;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.banner
+.tct-logo
 {
-    width: 100%;
-    height: 125vh;
-    background-color: #0071c5;
-    /* background-image: linear-
-    gradient(rgba(0, 113, 197, 1),rgba(0, 113, 197, 1)), url(background.jpg) */
-    background-size: cover;
-    background-position: center;
+    height: 40px;
 }
-
-.nav-bar
+    
+.topnav
 {
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo
-{
-    width: 150px;
-    cursor: pointer;
-}
-
-.nav-bar ul li
-{
-    font-size: 17px;
-    font-weight: bold;
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-}
-
-.nav-bar ul li a
-{
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.nav-bar ul li::after
-{
-    content: '';    
-    height: 3px;
-    width: 0;
-    background: #009688;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.25s;
-}
-
-.nav-bar ul li:hover::after
-{
-    width: 100%;
-}
-
-.content
-{
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: #fff;
-}
-
-.content h1
-{
-    font-size: 70px;
-    margin-top: 80px;
-}
-
-.content p
-{
-    margin: 20px auto;
-    font-weight: 100;
-    line-height: 25px;
-}
-
-button
-{
-    width: 350px;
-    padding: 20px 0;
-    text-align: center;
-    margin: 20px 10px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 4px solid #DAA21B;
-    background: transparent;
-    cursor: pointer;
-    position: relative;
     overflow: hidden;
+    background-color: #00ff7f;
 }
-
-.ep-button
+    
+.topnav a
 {
-    color: #fff;
-    font-size: large;
-    font-weight: bold;
+    float: left;
+    display: block;
+    color: black;
+    font-weight:bolder;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
+    font-size: 17px;
 }
-
-span
+    
+.topnav a:hover
 {
-    background: #DAA21B;
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 2.4s;
+    background-color: #bfbfbf;
+    color: black;
 }
-
-/* #left-button-span
+    
+.topnav a.active
 {
-    background: #DAA21B;
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.55s;
+    background-color: #2196F3;
+    color: white;
+    font-weight: bolder;
 }
-
-#right-button-span
+    
+.topnav .search-container
 {
-    background: #DAA21B;
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.55s;
-} */
-
-button:hover span
-{
-    width: 100%;
+    float: right;
 }
-
-button:hover
+    
+.topnav input[type=text]
 {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
     border: none;
 }
-
-/* #header-wrapper
+    
+.topnav .search-container button
 {
-    position: relative;
-	padding: 5em 0em 7em 0em;
-	background: #0071c5;
-	background-size: cover;
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+    
+.topnav .search-container button:hover
+{
+    background: #ccc;
+}
+    
+@media screen and (max-width: 600px)
+{
+    .topnav .search-container
+    {
+        float: none;
+    }
+        
+    .topnav a, .topnav input[type=text], .topnav .search-container button
+    {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+        
+    .topnav input[type=text]
+    {
+        border: 1px solid #ccc;
+    }
 }
 
-#container
+.navbar
 {
     overflow: hidden;
-    margin: 0em auto;
-    width: 1200px;
-} */
-
-
-/* #tct-full-logo
+    background-color: #333;
+}
+  
+.navbar a
 {
-    height: 100px;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0spx;
-    padding-left: 20px;
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.dropdown
+{
+    float: left;
+    overflow: hidden;
+}
+  
+.dropdown .dropbtn
+{
+    font-size: 17px;  
+    border: none;
+    outline: none;
+    color: black;
+    font-weight:bolder;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+.navbar a:hover, .dropdown:hover .dropbtn
+{
+    background-color: #bfbfbf;
+}
+  
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a
+{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover
+{
+    background-color: #bfbfbf;
+}
+  
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}
+
+
+/* Content */
+
+.courier-services
+{
+    margin: auto;
+    float: left;
+    width: 280px;
+    height: 285px;
+    border-radius: 30px;
+    background: #f9f871;
+    /* background-image: linear-gradient(#d4fc79, #b8f08f); */
+    padding: 20px;
+}
+
+/* #lazada-courier-services
+{
+    margin: 100%;
+    float: left;
+    width: 280px;
+    height: 285px;
+    border-radius: 30px;
+    background-image: linear-gradient(#d4fc79, #b8f08f);
+    padding: 20px;
 } */
+
+.ecommerce-platforms-images
+{
+    margin: auto;
+    width: 110px;
+    height: 110px;
+    background: #000000;
+    padding-top: 5px;
+}
+
+h1
+{
+    color: #ffffff;
+}
+
+h3, h5
+{
+    color: #2F4858;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h4
+{
+    color: #ffffff;
+}
