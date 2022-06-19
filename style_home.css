@@ -7,13 +7,13 @@
 body
 {
     margin: 0;
+    background-color: #0071c5;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .tct-logo
 {
     height: 40px;
-    cursor: pointer;
 }
     
 .topnav
@@ -168,4 +168,55 @@ body
 .dropdown:hover .dropdown-content
 {
     display: block;
+}
+
+
+/* Content */
+
+.courier-services
+{
+    margin: auto;
+    float: left;
+    width: 280px;
+    height: 285px;
+    border-radius: 30px;
+    background: #f9f871;
+    /* background-image: linear-gradient(#d4fc79, #b8f08f); */
+    padding: 20px;
+}
+
+/* #lazada-courier-services
+{
+    margin: 100%;
+    float: left;
+    width: 280px;
+    height: 285px;
+    border-radius: 30px;
+    background-image: linear-gradient(#d4fc79, #b8f08f);
+    padding: 20px;
+} */
+
+.ecommerce-platforms-images
+{
+    margin: auto;
+    width: 110px;
+    height: 110px;
+    background: #000000;
+    padding-top: 5px;
+}
+
+h1
+{
+    color: #ffffff;
+}
+
+h3, h5
+{
+    color: #2F4858;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h4
+{
+    color: #ffffff;
 }
