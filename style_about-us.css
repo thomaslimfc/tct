@@ -378,7 +378,7 @@ h2, h3, h4
       color: var(--clr-neon1);
       border: var(--clr-neon1) 3px solid;
       background-color: transparent;
-      border-radius: 0.25em;
+      border-radius: 13px;
       /* text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor; */
       box-shadow: inset 0 0 0.5em 0 var(--clr-neon1), 0 0 0.5em 0 var(--clr-neon1);
       transition: all 0.5s;
@@ -414,7 +414,7 @@ h2, h3, h4
       color: var(--clr-neon2);
       border: var(--clr-neon2) 3px solid;
       background-color: transparent;
-      border-radius: 0.25em;
+      border-radius: 13px;
       /* text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor; */
       box-shadow: inset 0 0 0.5em 0 var(--clr-neon2), 0 0 0.5em 0 var(--clr-neon2);
       transition: all 0.5s;
