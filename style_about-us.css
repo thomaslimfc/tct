@@ -373,7 +373,7 @@ h2, h3, h4
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      font-family: "Balsamiq Sans", cursive;
+      font-family: 'Balsamiq Sans';
       text-decoration: none;
       color: var(--clr-neon1);
       border: var(--clr-neon1) 3px solid;
