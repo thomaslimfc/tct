@@ -338,7 +338,7 @@ h2, h3, h4
     /* display: flex; */
     justify-content: center;
     align-items: center;
-    height: 15vh;
+    height: 100px;
     background: #ee4e2e;
 }
 
@@ -349,7 +349,7 @@ h2, h3, h4
     display: fixed;
     justify-content: center;
     align-items: center;
-    height: 15vh;
+    height: 100px;
     background: #0d1274;
 }
 
