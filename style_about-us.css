@@ -231,7 +231,6 @@ body
     float: left;
     width: 360px;
     height: 140px;
-    background: #ee4e2e;
     padding: 20px;
 }
 
@@ -255,8 +254,8 @@ body
 
 #lazada-grid-container
 {
-    border: 3px solid #E6F4F1;
     background-color: #0d1274;
+    border: 3px solid #E6F4F1;
     /* float: left;
     width: 50%;
     height: 160px;
@@ -278,7 +277,6 @@ body
     float: left;
     width: 360px;
     height: 140px;
-    background: #0d1274;
     padding: 20px;
 }
 
