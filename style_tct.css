@@ -1,0 +1,434 @@
+s/* -------------------------------------------------- */
+
+
+/* Body */
+
+.pageTitle_description_div
+{
+    margin: 30px 20% 40px 20%;
+}
+
+.home_courier_service_div
+{
+    margin: 2% 0 8% 25%;
+}
+
+.services_package_div, .payment_pricing_div
+{
+    margin: 30px 8% 40px 8%;
+}
+
+#honeycomb_div
+{
+    padding-bottom: 2%;
+}
+
+
+/* FAQs - Frequently Asked Questions */
+
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+/* $bg: #fff;
+$text: #7288a2;
+$gray: #4d5974;
+$lightgray: #e5e5e5;
+$blue: #03b5d2; */
+
+.faqs_container
+{
+    margin: 0 auto;
+    padding: 4rem;
+    width: 48rem;
+
+    /* body */
+    /* margin: 0; */
+    /* padding: 0; */
+    font-family: 'Hind', sans-serif;
+    background: $bg;
+    color: $gray;
+    display: flex;
+    min-height: 100vh;
+
+    /* * */
+    box-sizing: border-box;
+    &::before, &::after
+    {
+        box-sizing: border-box;
+    }    
+}
+
+.faqs_accordion
+{
+    .faqs_accordion-item
+    {
+        border-bottom: 1px solid $lightgray;
+        faqs_button[aria-expanded='true']
+        {
+            border-bottom: 1px solid $blue;
+        }
+    }
+    faqs_button
+    {
+        position: relative;
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 1em 0;
+        color: $text;
+        font-size: 1.15rem;
+        font-weight: 400;
+        border: none;
+        background: none;
+        outline: none;
+        &:hover, &:focus
+        {
+            cursor: pointer;
+            color: $blue;
+            &::after
+            {
+                cursor: pointer;
+                color: $blue;
+                border: 1px solid $blue;
+            }
+        }
+        .faqs_accordion-title
+        {
+            padding: 1em 1.5em 1em 0;
+        }
+        .faqs_icon
+        {
+            display: inline-block;
+            position: absolute;
+            top: 18px;
+            right: 0;
+            width: 22px;
+            height: 22px;
+            border: 1px solid;
+            border-radius: 22px;
+            &::before
+            {
+                display: block;
+                position: absolute;
+                content: '';
+                top: 9px;
+                left: 5px;
+                width: 10px;
+                height: 2px;
+                background: currentColor;
+            } 
+            &::after
+            {
+                display: block;
+                position: absolute;
+                content: '';
+                top: 5px;
+                left: 9px;
+                width: 2px;
+                height: 10px;
+                background: currentColor;
+            }
+        }   
+    }
+    faqs_button[aria-expanded='true']
+    {
+        color: $blue;
+        .faqs_icon
+        {
+            &::after
+            {
+            width: 0;
+            }
+        }
+        + .faqs_accordion-content
+        {
+            opacity: 1;
+            max-height: 9em;
+            transition: all 200ms linear;
+            will-change: opacity, max-height;
+        }
+    }    
+    .faqs_accordion-content
+    {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 200ms linear, max-height 200ms linear;
+        will-change: opacity, max-height;
+        
+        .faqs_p
+        {
+            font-size: 1rem;
+            font-weight: 300;
+            margin: 2em 0;
+        }
+    }
+}
+
+
+/* -------------------------------------------------- */
+
+
+/* About Us */
+
+#tct_slogan
+{
+    color: #0071c5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#tct-full-logo
+{
+    /* margin: 240; */
+    width: 350px;
+    padding-top: 5px;
+}
+
+#tct-full-logo-div
+{
+    /* margin: 240; */
+    position: relative;
+    /* top: 50%;
+    left: 50%; */
+    /* -ms-transform: translate(-50%,-50%);
+    /* transform: translate(-50%,-50%) */
+}
+
+#shopee-grid-container
+{
+    background-color: #ee4e2e;
+    border: 3px solid #E6F4F1;
+    /* border-collapse: collapse; */
+    float: left;
+    width: 50%;
+    height: 160px;
+    display: inline-grid;
+    grid-template-columns: auto;
+    /* background: #ebf0f6; */
+    padding: 20px;
+}
+
+
+#shopee-left-region
+{
+    float: left;
+    width: 140px;
+    height: 240px;
+    background: #f9f871;
+    padding: 20px;
+}
+
+#shopee-right-region
+{
+    float: left;
+    width: 360px;
+    height: 140px;
+    padding: 20px;
+}
+
+#shopee-left-table
+{
+    float: left;
+    width: 200px;
+    height: 165px;
+    background: #C4D2BD;
+    padding: 20px;
+}
+
+#shopee-right-table
+{
+    float: left;
+    width: 300px;
+    height: 165px;
+    background: #F7F5DD;
+    padding: 20px;
+}
+
+#lazada-grid-container
+{
+    background-color: #0d1274;
+    border: 3px solid #E6F4F1;
+    /* float: left;
+    width: 50%;
+    height: 160px;
+    background: #fff;
+    padding: 20px; */
+}
+
+#lazada-left-region
+{
+    float: left;
+    width: 140px;
+    height: 240px;
+    background: #f9f871;
+    padding: 20px;
+    }
+
+#lazada-right-region
+{
+    float: left;
+    width: 360px;
+    height: 140px;
+    padding: 20px;
+}
+
+#lazada-left-table
+{
+    float: left;
+    width: 200px;
+    height: 165px;
+    background: #C4D2BD;
+    padding: 20px;
+}
+
+#lazada-right-table
+{
+    float: left;
+    width: 300px;
+    height: 165px;
+    background: #F7F5DD;
+    padding: 20px;
+}
+
+/* background: #ffd24c; DARK YELLOW */
+
+h2, h3, h4
+{
+    color: #ffffff;
+}
+
+.shopee-left-table-h4
+{
+    color: #2F4858;
+}
+
+.shopee-right-table-h4
+{
+    color: #2F4858;
+    text-decoration: none;
+}
+
+.lazada-left-table-h4
+{
+    color: #2F4858;
+}
+
+.lazada-right-table-h4
+{
+    color: #2F4858;
+    text-decoration: none;
+}
+
+/* Neon Button */
+
+#shopee-neon-button-wrapper
+{
+    margin: 0;
+    padding-top: 160px;
+    /* padding-left: 20px; */
+    display: fixed;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: #ee4e2e;
+}
+
+#lazada-neon-button-wrapper
+{
+    margin: 0;
+    padding-top: 160px;
+    display: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: #0d1274;
+}
+
+:root
+{
+  --clr-neon1: hsl(276,100%,96%);
+  /* --clr-neon: hsl(60 92% 71%); */
+  /* --clr-neon: hsl(317 100% 54%); */
+  --clr-bg1: hsl(323 21% 16%);
+}
+
+    .shopee-neon-button
+    {
+      font-size: 18px;
+      font-weight: bold;
+      height: 55px;
+      width: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-family: 'League Spartan';
+      text-decoration: none;
+      color: var(--clr-neon1);
+      border: var(--clr-neon1) 3px solid;
+      background-color: transparent;
+      border-radius: 13px;
+      /* text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor; */
+      box-shadow: inset 0 0 0.5em 0 var(--clr-neon1), 0 0 0.5em 0 var(--clr-neon1);
+      transition: all 0.5s;
+    }
+     
+    .shopee-neon-button:hover
+    {
+        background-color: var(--clr-neon1);
+        color: #3B2A1F;
+        /* color: fff; */
+        font-weight: bolder;
+    }
+
+:root
+{
+  --clr-neon2: hsl(276,100%,96%);
+  /* --clr-neon: hsl(317 100% 54%); */
+  --clr-bg2: hsl(323 21% 16%);
+}
+
+    .lazada-neon-button
+    {
+      font-size: 18px;
+      font-weight: bold;
+      height: 55px;
+      width: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-family: 'League Spartan';
+      text-decoration: none;
+      color: var(--clr-neon2);
+      border: var(--clr-neon2) 3px solid;
+      background-color: transparent;
+      border-radius: 13px;
+      /* text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor; */
+      box-shadow: inset 0 0 0.5em 0 var(--clr-neon2), 0 0 0.5em 0 var(--clr-neon2);
+      transition: all 0.5s;
+    }
+     
+    .lazada-neon-button:hover
+    {
+        background-color: var(--clr-neon2);
+        color: #3B2A1F;
+        /* color: fff; */
+        font-weight: bolder;
+    }    
+
+
+/* -------------------------------------------------- */
+
+
+/* Footers */
+
+#yt-logo-footer
+{
+    padding-bottom: 20px;
+}
+
+
+/* -------------------------------------------------- */
