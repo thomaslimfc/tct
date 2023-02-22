@@ -24,6 +24,145 @@ s/* -------------------------------------------------- */
 }
 
 
+/* Services */
+
+.card-body
+{
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.subtitle_h5, .list_indent_td
+{
+    text-align: left;
+}
+
+.software_table_column1, .software_table_column2,
+.casio_table_column1, .casio_table_column2, .casio_table_column3,
+.logitech_table_column1, .logitech_table_column2, .logitech_table_column3,
+.logitech2_table_column1, .logitech2_table_column2, .logitech2_table_column3,
+.logitech3_table_column1, .logitech3_table_column2, .logitech3_table_column3
+{
+    padding: 0px 20px;
+    border: 1px solid;
+}
+
+.software_table_column1, .casio_table_column1, .logitech_table_column1, .logitech2_table_column1, .logitech3_table_column1
+{
+    background-color: #0073CC;
+    color: #E1F1FF;
+    padding: 10px 5px;
+}
+
+/* .casio_table_column2, .logitech_table_column2
+{
+    background-color: #72FAC9;
+    color: #2F4858;
+    padding: 10px 10px;
+} */
+
+/* .casio_table_column3, .logitech_table_column3
+{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 10px;
+} */
+
+.table_subject
+{
+    background-color: #72FAC9;
+    color: #2F4858;
+}
+
+/* SOFTWARE */
+
+.software_table_column1
+{
+    max-width: 150px;
+}
+
+.software_table_column2
+{
+    max-width: 200px;
+}
+
+/* CASIO */
+
+.casio_table_column1
+{
+    max-width: 81px;
+}
+
+.casio_table_column2, .casio_table_column3
+{
+    max-width: 116px;
+}
+
+/* LOGITECH */
+
+.logitech_table_column1
+{
+    max-width: 170px;
+}
+
+.logitech2_table_column1
+{
+    max-width: 74px;
+}
+
+.logitech3_table_column1
+{
+    max-width: 90px;
+}
+
+.logitech1_table_column2
+{
+    max-width: 142px;
+}
+
+.logitech2_table_column2
+{
+    max-width: 142px;
+}
+
+.logitech3_table_column2
+{
+    max-width: 200px;
+}
+
+/* REMOTE CONTROL BATTERY REPLACEMENT SERVICES */
+#remote_control_specification
+{
+    text-align: center;   
+}
+
+/* .table_column3
+{
+    width: 20px;
+} */
+
+table_column2:nth-child(even)
+{
+    background-color: #395975;
+}
+
+.calculator_battery_brand:hover
+{
+    background-color: coral;
+}
+
+.calculator_battery_model:hover
+{
+    background-color: coral;
+}
+
+
+
+/* .border_table, .border_table_th, .border_table_td
+{
+
+} */
+
 /* FAQs - Frequently Asked Questions */
 
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
