@@ -1,4 +1,48 @@
-s/* -------------------------------------------------- */
+/* -------------------------------------------------- */
+/* General */
+.highlightNone {
+    user-select: none;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #007BFF, #00C6FF);
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.businessInformation {
+    border: 2px solid #dcdcdc;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 680px;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.eCommercePlatform {
+    border: 2px solid #dcdcdc;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 680px;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.eCommercePlatform:hover {
+    border-color: #007BFF;
+    box-shadow: 4px 4px 12px rgba(0, 123, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.eCommercePlatform img {
+    transition: transform 0.3s ease;
+}
+.eCommercePlatform:hover img {
+    transform: scale(1.05);
+}
 
 
 /* Body */
@@ -10,7 +54,9 @@ s/* -------------------------------------------------- */
 
 .home_courier_service_div
 {
-    margin: 2% 0 8% 25%;
+    margin-left: 35%;
+    /* margin: 25% 0; */
+    /* margin: 2% 0 8% 25%; */
 }
 
 .services_package_div, .payment_pricing_div
@@ -434,7 +480,7 @@ $blue: #03b5d2; */
 
 h2, h3, h4
 {
-    color: #ffffff;
+    /* color: #ffffff; */
 }
 
 .shopee-left-table-h4
