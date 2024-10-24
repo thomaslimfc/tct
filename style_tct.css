@@ -44,6 +44,9 @@ hr {
     transform: scale(1.05);
 }
 
+#yt-logo-header {
+    padding-right: 28px;
+}
 
 /* Body */
 
