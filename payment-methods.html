@@ -45,17 +45,17 @@
         </div>
     </header>
 
-    <br>
+    <br class="highlightNone">
 
     <body>
         <!-- TITLE -->
-        <div class="pageTitle_description_div">
+        <div>
             <center>
                 <h1 class="display-6 fw-normal">Pick your preferred payment methods</h1>
             </center>
             <center>
                 <p class="fs-5 text-muted">
-                    All payment details are clearly stated below.
+                    An invoice will be issued upon receipt of payment.
                 </p>
             </center>    
         </div>
@@ -74,7 +74,7 @@
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>Username:</li>
                             <li>tct_penang</li>
-                                <br>
+                                <br class="highlightNone">
                             <li>Purpose (Optional):</li>
                             <li>YOUR NAME</li>
                         </ul>
@@ -83,26 +83,45 @@
                 </div>
             </div>
 
-            <!-- TOUCH 'N GO EWALLET' -->
+            <!-- PUBLIC BANK BERHAD -->
             <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3 text-bg-success border-primary">
+                        <h4 class="my-0 fw-normal text-light">Public Bank Berhad</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="images/public-bank.png" alt="Touch 'n Go eWallet" height="100px">
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Account Number:</li>
+                            <li>502 000 8809</li>
+                                <br class="highlightNone">
+                            <li>Account Holder:</li>
+                            <li>Thomas Comonics Technology</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-success text-light">Transfer now</button>
+                    </div>
+                </div>
+            </div>   
+
+            <!-- TOUCH 'N GO EWALLET' -->
+            <!-- <div class="col">
                 <div class="card mb-4 rounded-3 shadow-sm">
                     <div class="card-header py-3 text-bg-success border-primary">
                         <h4 class="my-0 fw-normal text-light">Touch 'n Go eWallet</h4>
                     </div>
                     <div class="card-body">
                         <img src="images/touch-n-go-ewallet.png" alt="Touch 'n Go eWallet" height="100px">
-                        <!-- <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1> -->
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>Who To Transfer:</li>
                             <li>+60 174026354</li>
-                                <br>
+                                <br class="highlightNone">
                             <li>Recipient Reference:</li>
                             <li>YOUR NAME</li>
                         </ul>
                         <button type="button" class="w-100 btn btn-lg btn-success text-light">Pay now</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
             
             <!-- PAYPAL WALLET -->
             <div class="col">
@@ -116,7 +135,7 @@
                         <ul class="list-unstyled mt-3 mb-4">
                             <li>Email Address:</li>
                             <li>tct.penang@gmail.com</li>
-                                <br>
+                                <br class="highlightNone">
                             <li>Mobile Number:</li>
                             <li>+60174026354</li>
                         </ul>
@@ -127,28 +146,55 @@
         </div>
     </body>
 
-    <footer>
-        <div class="b-example-divider"></div>
-            <div class="container">
-                <footer class="py-3 my-4">
-                    <!-- NAVIGATION -->
-                    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
-                        <li class="nav-item"><a href="services.html" class="nav-link px-2 text-muted">Services</a></li>
-                        <li class="nav-item"><a href="products.html" class="nav-link px-2 text-muted">Products</a></li>
-                        <li class="nav-item"><a href="payment-methods.html" class="nav-link px-2 text-muted">Payment-Methods</a></li>
-                        <li class="nav-item"><a href="faqs.html" class="nav-link px-2 text-muted">FAQs</a></li>
-                        <li class="nav-item"><a href="about-us.html" class="nav-link px-2 text-muted">About-Us</a></li>
-                    </ul>
+    <br class="highlightNone">
+    <hr>
 
-                    <center>
-                        <img id="yt-logo-footer" src="images/tct-logo.png" alt="Yottasoft Technology" height="125">
-                    </center>
+    <!-- INVOICE -->
+    <div class="pageTitle_description_div">
+        <center>
+            <h1 class="display-6 fw-normal">Essential Information for Invoice Request</h1>
 
-                    <!-- @ 2022 Company Inc. -->
-                    <p class="text-center text-muted">Copyright &copy; 2021-2023 Thomas Cheapsoft Technology</p>
-                    <p class="text-center">All rights reserved.</p>
-                </footer>
-            </div>
+            <p class="fs-5 text-muted">
+                Please provide us with information below for official invoice.
+            </p>
+
+            <table>
+                <tr>
+                    <td>1. </td>
+                    <td width="488px">Company Name</td>
+                </tr>
+                <tr>
+                    <td>2. </td>
+                    <td>Company Address</td>
+                </tr>
+                <tr>
+                    <td>3. </td>
+                    <td>Shipping Address (if different)</td>
+                </tr>
+            </table>
+        </center>    
+    </div>
+
+    <br class="highlightNone">
+
+    <footer class="py-3 my-4">
+        <!-- NAVIGATION -->
+        <ul class="nav justify-content-center mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link px-2 text-muted">Services</a></li>
+            <li class="nav-item"><a href="products.html" class="nav-link px-2 text-muted">Products</a></li>
+            <li class="nav-item"><a href="payment-methods.html" class="nav-link px-2 text-muted">Payment-Methods</a></li>
+            <li class="nav-item"><a href="faqs.html" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="about-us.html" class="nav-link px-2 text-muted">About-Us</a></li>
+        </ul>
+        <hr>
+        <center>
+            <img id="yt-logo-footer" src="images/tct-logo.png" alt="Yottasoft Technology" height="125">
+        </center>
+        <!-- @ 2022 Company Inc. -->
+        <p class="text-center text-muted">
+            Copyright &copy; 2021-2025 Thomas Comonics Technology
+            <br class="highlightNone"> All rights reserved.
+        </p>
     </footer>
 </html>
