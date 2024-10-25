@@ -44,6 +44,24 @@ hr {
     transform: scale(1.05);
 }
 
+.productBrandsLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.productBrandsLogo img {
+    width: 180px;
+    height: auto;
+}
+.productBrandsLogo > div {
+    padding-right: 100px;
+}
+
 #yt-logo-header {
     padding-right: 28px;
 }
