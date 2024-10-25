@@ -1,6 +1,6 @@
 /* -------------------------------------------------- */
 /* General */
-.highlightNone {
+.highlightNone, img {
     user-select: none;
 }
 
